@@ -1,4 +1,7 @@
 .imageContainer{
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
     .primaryImage{
         width:300px;
         height:300px;
