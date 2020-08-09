@@ -1,0 +1,10 @@
+.button{
+    border: 1px solid var(--gray);
+    color: var(--gray);
+    a {
+        padding: var(--b-padding);
+        text-align:center;
+        display: block;
+        width:100%;
+    }
+}
