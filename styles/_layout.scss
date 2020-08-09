@@ -82,7 +82,7 @@
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    min-height: 100vh;
+    min-height: calc(100vh - 24px);
   }
   .buttons{
     gap:20px;
