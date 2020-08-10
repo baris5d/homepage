@@ -23,10 +23,10 @@ export default function Home() {
       <Header />
       <main className="wrapper-c">
         <r-grid columns="12">
-          <r-cell span="4">
+          <r-cell span="4" span-s="row">
             <ProfileImage image="/images/drawing.png"/>
           </r-cell>
-          <r-cell span="6-12">
+          <r-cell span="6-12" span-s="row">
             <Welcome>
                   <h2>Hey 👋, I'm Barış.<br/> 24 year old, experienced developer.</h2>
                   <div>
@@ -43,13 +43,15 @@ export default function Home() {
             </Welcome>
           </r-cell>
         </r-grid>
-        <r-grid columns="5" class="buttons">
+        <r-grid columns="5" class="buttons" >
           {SOCIAL.map(page => {
             return(
-                <Button
-                url={page.url}
-                text={page.name}
-              />
+                <r-cell span-s="row" key={page.url}>
+                  <Button
+                    url={page.url}
+                    text={page.name}
+                  />
+                </r-cell>
               )
             }
           )}
