@@ -5,6 +5,10 @@
     padding-top:40px;
     padding-bottom:10px;
     border-top: .5px solid var(--dark-gray);
+    
+    @media only screen and (max-width: 600px) {
+        grid-template-columns: auto;
+    }
     img{
         border-radius: 10px;
     }

@@ -30,9 +30,9 @@ export default function articles({posts}){
             <h1>Articles</h1>
             {Object.keys(articlesByYear).sort().reverse().map(function(key,index){
                 return(
-                    <r-grid columns="8">
-                        <r-cell span="1"><h3 className="sticky">{key}</h3></r-cell>
-                        <r-cell span="7" className="article-box">
+                    <r-grid columns="10">
+                        <r-cell span="2"><h3 className="sticky">{key}</h3></r-cell>
+                        <r-cell span="8" className="article-box">
                             {articlesByYear[key].map(({ title, description, date, readMin, image, platform, url }) => (
                                 <Article 
                                     title={title}
