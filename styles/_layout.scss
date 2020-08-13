@@ -84,7 +84,9 @@
     margin-left: auto;
     margin-right: auto;
     min-height: calc(100vh - 24px);
-    
+    &.--auto-height{
+      min-height: auto;
+    }
     @media only screen and (max-width: 600px) {
       padding: 0 20px;
     }

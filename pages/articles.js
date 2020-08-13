@@ -23,7 +23,7 @@ export default function articles({posts}){
     return(
         <div className="container">
             <Head>
-                <title>Create Next App</title>
+                <title>Barış Dede Ailenizin Programcısı</title>
             </Head>
             <Header />
             <main>

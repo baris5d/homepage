@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
+        <title>Barış Dede - Gelişmekte Olan Geliştirici Genç</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
@@ -28,7 +28,7 @@ export default function Home() {
           </r-cell>
           <r-cell span="6-12" span-s="row">
             <Welcome>
-                  <h2>Hey 👋, I'm Barış.<br/> 24 year old, experienced developer.</h2>
+                  <h2>Hey 👋, I'm Barış.<br/> 24 years old, experienced developer.</h2>
                   <div>
                       <p>👨‍🎓 Computer engineering student,</p>
                       <p>💻 Full-Stack developer,</p>

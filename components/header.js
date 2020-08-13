@@ -7,7 +7,9 @@ const menu = [
 export function Header() {
   return (
       <header className={styles.header}>
-          <div className={styles.logo}></div>
+          <div className={styles.logo}>
+              <a href="/" ></a>
+          </div>
           <nav>
             {menu.map(m => {
                 return(
