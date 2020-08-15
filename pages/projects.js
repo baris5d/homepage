@@ -1,7 +1,6 @@
-import Head from 'next/head'
 import { Header } from '../components/header'
 import { Project } from '../components/project'
-
+import { SEO } from '../components/seo'
 import fs from "fs";
 import matter from "gray-matter";
 import { MouseTracker } from '../components/mouseTracker'
@@ -23,11 +22,12 @@ export default function projects({posts}){
     
     return(
         <>  
+        <SEO 
+          description = "The projects I have done and the projects I have been in the developer team."
+          title = "Projects - Barış Dede { Gelişmekte Olan Geliştirici Genç }"
+        />
           <MouseTracker />
             <div className="container --auto-height">
-                <Head>
-                    <title>Projects</title>
-                </Head>
                 <Header />
                 <h1>Projects</h1>
             </div>

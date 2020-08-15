@@ -5,6 +5,7 @@ import { Welcome } from '../components/welcome'
 import { Hire } from '../components/hire'
 import { Button } from '../components/button'
 import { MouseTracker } from '../components/mouseTracker'
+import { SEO } from '../components/seo'
 
 const SOCIAL = [
   { name : "GITHUB" , url : "https..."},
@@ -17,6 +18,10 @@ const SOCIAL = [
 export default function Home() {
   return (
     <>
+      <SEO 
+       description = "Gelişmekte olan geliştirici genç"
+       title = "Barış Dede { Gelişmekte Olan Geliştirici Genç }"
+      />
       <MouseTracker />
 
       <div className="container">

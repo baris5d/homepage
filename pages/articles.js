@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import { SEO } from '../components/seo'
 import { Header } from '../components/header'
 import { Article } from '../components/article'
 import fs from "fs";
@@ -23,13 +23,13 @@ export default function articles({posts}){
   
     return(
         <>
+            <SEO 
+            description = "All the articles I've written so far, I hope to write more articles."
+            title = "Articles - Barış Dede { Gelişmekte Olan Geliştirici Genç }"
+            />
             <MouseTracker />
         
             <div className="container">
-                <Head>
-                    <title>Barış Dede Ailenizin Programcısı</title>
-                </Head>
-
                 <Header />
                 <main>
                 <h1>Articles</h1>
