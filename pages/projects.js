@@ -32,7 +32,7 @@ export default function projects({posts}){
                 <h1>Projects</h1>
             </div>
             <div className="full-width">
-                {sortedProjects.map(({ title, description, date, url, address, image }) => (
+                {sortedProjects.map(({ title, description, date, url, address, image, attachmentName, attachmentUrl }) => (
                     <Project 
                         title = {title}
                         description = {description}
@@ -41,6 +41,8 @@ export default function projects({posts}){
                         address= {address}
                         image = {image}
                         key={title}
+                        attachmentName={attachmentName}
+                        attachmentUrl={attachmentUrl}
                     />
                 ))}
             </div>

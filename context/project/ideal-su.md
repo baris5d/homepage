@@ -5,4 +5,6 @@ address: idealsu.com.tr
 url: http://idealsu.com.tr
 date: 2017-11-09
 image: /images/projects/idealsu.png
+attachmentName : 'Case Study'
+attachmentUrl : '/projects/idealsu.jpg'
 ---
