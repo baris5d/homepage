@@ -4,6 +4,7 @@ import { Project } from '../components/project'
 
 import fs from "fs";
 import matter from "gray-matter";
+import { MouseTracker } from '../components/mouseTracker'
 
 function groupBy(key) {
     return function group(array) {
@@ -21,7 +22,8 @@ export default function projects({posts}){
     const sortedProjects = posts.sort((a, b) => new Date(b.pDate) - new Date(a.pDate));
     
     return(
-        <>
+        <>  
+          <MouseTracker />
             <div className="container --auto-height">
                 <Head>
                     <title>Projects</title>

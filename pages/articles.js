@@ -3,6 +3,7 @@ import { Header } from '../components/header'
 import { Article } from '../components/article'
 import fs from "fs";
 import matter from "gray-matter";
+import { MouseTracker } from '../components/mouseTracker'
 
 function groupBy(key) {
     return function group(array) {
@@ -21,38 +22,43 @@ export default function articles({posts}){
     const articlesByYear = groupByYear(sortedPosts)
   
     return(
-        <div className="container">
-            <Head>
-                <title>Barış Dede Ailenizin Programcısı</title>
-            </Head>
-            <Header />
-            <main>
-            <h1>Articles</h1>
-            {Object.keys(articlesByYear).sort().reverse().map(function(key,index){
-                return(
-                    <r-grid columns="10">
-                        <r-cell span="2"><h3 className="sticky">{key}</h3></r-cell>
-                        <r-cell span="8" className="article-box">
-                            {articlesByYear[key].map(({ title, description, date, readMin, image, platform, url }) => (
-                                <Article 
-                                    title={title}
-                                    description = {description}
-                                    date = {date}
-                                    readMin = {readMin}
-                                    image = {image}
-                                    platform = {platform}
-                                    key={title}
-                                    url={url}
-                                />
-                            ))}
-                        </r-cell>
-                    </r-grid>
-                )
-            
-            })}
+        <>
+            <MouseTracker />
+        
+            <div className="container">
+                <Head>
+                    <title>Barış Dede Ailenizin Programcısı</title>
+                </Head>
+
+                <Header />
+                <main>
+                <h1>Articles</h1>
+                {Object.keys(articlesByYear).sort().reverse().map(function(key,index){
+                    return(
+                        <r-grid columns="10">
+                            <r-cell span="2"><h3 className="sticky">{key}</h3></r-cell>
+                            <r-cell span="8" className="article-box">
+                                {articlesByYear[key].map(({ title, description, date, readMin, image, platform, url }) => (
+                                    <Article 
+                                        title={title}
+                                        description = {description}
+                                        date = {date}
+                                        readMin = {readMin}
+                                        image = {image}
+                                        platform = {platform}
+                                        key={title}
+                                        url={url}
+                                    />
+                                ))}
+                            </r-cell>
+                        </r-grid>
+                    )
                 
-            </main>
-        </div>
+                })}
+                    
+                </main>
+            </div>
+        </>
     )
 }
 
