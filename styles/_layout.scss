@@ -26,9 +26,10 @@
     sans-serif;
     background-color: var(--c-theme);
     color: var(--gray);
+    cursor:none;
   }
   ::selection {
-    color: var(--c-theme);
+    color: var(--gray);
     background-color: var(--c-highlight);
   }
   b,
@@ -43,7 +44,6 @@
     margin-bottom: var(--gap);
   }
   
-
   p{
     line-height: var(--p-line-height);
   }
