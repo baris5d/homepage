@@ -4,7 +4,7 @@ const menu = [
     { name : 'projects', uri : '/projects' },
     { name : 'articles', uri : '/articles' }
 ]
-export function Header() {
+export function Header({active = false}) {
   return (
       <header className={styles.header}>
           <div className={styles.logo}>
@@ -17,7 +17,7 @@ export function Header() {
                         key={m.uri}
                         href={m.uri}
                     >
-                        <a>{m.name}</a>
+                        <a className={active == m.name ? styles.active : ""}>{m.name}</a>
                     </Link>
                 )
             })}
