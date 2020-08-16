@@ -1,10 +1,10 @@
 ---
 title: 'Ideal Su'
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae proin sagittis nisl rhoncus mattis rhoncus urna. Lacus luctus accumsan tortor posuere ac ut consequat. Montes nascetur ridiculus mus mauris vitae ultricies leo integer malesuada. In egestas erat imperdiet sed euismod nisi porta. Diam vulputate ut pharetra sit amet. Feugiat sed lectus vestibulum mattis ullamcorper. Diam sollicitudin tempor id eu nisl nunc mi ipsum. Eget dolor morbi non arcu risus quis. Ultrices gravida dictum fusce ut placerat orci nulla. Diam vulputate ut pharetra sit amet. Feugiat sed lectus vestibulum mattis ullamcorper. Diam sollicitudin tempor id eu nisl nunc mi ipsum. Eget dolor morbi non arcu risus quis. Ultrices gravida dictum fusce ut placerat orci nulla.
+description: <p>We have queried the question "How should be the ideal water". Our motto was "Your ideal water". During the development, we have specified the target audience in terms of their social status. These statues were defined as B1, B2, C1, C2 which correspond to interest and interact rates of digital sources. After that, we follow a story-based model to establish emotional ties with customers and the brand. The "ideal" story starts with rain on the top of Toros mountain, it flows down to the ground. It is filtered after 15 years-long journey. It gains its minerals and pH to achieves the "ideal" that is aimed by nature. You can see the story starts with only a drop in an animated way.</p>
 address: idealsu.com.tr
 url: http://idealsu.com.tr
 date: 2017-11-09
-image: /images/projects/idealsu.png
+image: /images/projects/idealsu.jpg
 attachmentName : 'Case Study'
 attachmentUrl : '/projects/idealsu.jpg'
 ---

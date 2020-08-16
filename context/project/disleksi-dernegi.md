@@ -4,5 +4,5 @@ description: <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
 address: disleksidernegi.com
 url: https://disleksidernegi.com
 date: 2017-11-09
-image: /images/projects/disleksidernegi.png
+image: /images/projects/disleksidernegi.jpg
 ---
