@@ -9,11 +9,11 @@ import { SEO } from '../components/seo'
 import { Footer } from '../components/footer'
 
 const SOCIAL = [
-  { name : "GITHUB" , url : "https..."},
-  { name : "LINKEDIN" , url : "https..."},
-  { name : "MEDIUM" , url : "https..."},
-  { name : "TWITTER" , url : "https..."},
-  { name : "INSTAGRAM" , url : "https..."},
+  { name : "GITHUB" , url : "https://github.com/baris5d"},
+  { name : "LINKEDIN" , url : "https://www.linkedin.com/in/baris5d/"},
+  { name : "MEDIUM" , url : "https://medium.com/@baris5d"},
+  { name : "TWITTER" , url : "https://twitter.com/baris5d"},
+  { name : "INSTAGRAM" , url : "https://instagram.com/baris5d"},
 ]
 
 export default function Home() {
@@ -23,7 +23,9 @@ export default function Home() {
        description = "Gelişmekte olan geliştirici genç"
        title = "Barış Dede { Gelişmekte Olan Geliştirici Genç }"
       />
-      <MouseTracker />
+      <div>
+        <MouseTracker />
+      </div>
 
       <div className="container">
         <Head>

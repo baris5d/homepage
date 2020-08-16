@@ -27,7 +27,9 @@ export default function projects({posts}){
           description = "The projects I have done and the projects I have been in the developer team."
           title = "Projects - Barış Dede { Gelişmekte Olan Geliştirici Genç }"
         />
-          <MouseTracker />
+           <div>
+            <MouseTracker />
+          </div>
             <div className="container --auto-height">
                 <Header active="projects"/>
                 <h1>Projects</h1>

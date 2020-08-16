@@ -28,7 +28,9 @@ export default function articles({posts}){
             description = "All the articles I've written so far, I hope to write more articles."
             title = "Articles - Barış Dede { Gelişmekte Olan Geliştirici Genç }"
             />
-            <MouseTracker />
+             <div>
+                <MouseTracker />
+            </div>
         
             <div className="container">
                 <Header active="articles" />
