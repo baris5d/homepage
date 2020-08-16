@@ -29,4 +29,4 @@ yarn-error.log*
 .env.test.local
 .env.production.local
 
-/context/disleksi-dernegi.md
+/context/project/disleksi-dernegi.md
