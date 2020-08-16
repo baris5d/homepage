@@ -6,6 +6,7 @@ import { Hire } from '../components/hire'
 import { Button } from '../components/button'
 import { MouseTracker } from '../components/mouseTracker'
 import { SEO } from '../components/seo'
+import { Footer } from '../components/footer'
 
 const SOCIAL = [
   { name : "GITHUB" , url : "https..."},
@@ -67,6 +68,7 @@ export default function Home() {
           
           </r-grid>
         
+        <Footer /> 
         </main>
       </div>
     </>

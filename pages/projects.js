@@ -4,6 +4,7 @@ import { SEO } from '../components/seo'
 import fs from "fs";
 import matter from "gray-matter";
 import { MouseTracker } from '../components/mouseTracker'
+import { Footer } from '../components/footer'
 
 function groupBy(key) {
     return function group(array) {
@@ -28,11 +29,11 @@ export default function projects({posts}){
         />
           <MouseTracker />
             <div className="container --auto-height">
-                <Header />
+                <Header active="projects"/>
                 <h1>Projects</h1>
             </div>
             <div className="full-width">
-                {sortedProjects.map(({ title, description, date, url, address, image, attachmentName, attachmentUrl }) => (
+                {sortedProjects.map(({ title, description, date, url, address, image, attachmentName, attachmentUrl, inactive, demo }) => (
                     <Project 
                         title = {title}
                         description = {description}
@@ -43,9 +44,12 @@ export default function projects({posts}){
                         key={title}
                         attachmentName={attachmentName}
                         attachmentUrl={attachmentUrl}
+                        inactive={inactive}
+                        demo={demo}
                     />
                 ))}
             </div>
+            <Footer />
         </>
     )
 }

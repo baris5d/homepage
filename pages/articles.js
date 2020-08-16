@@ -4,6 +4,7 @@ import { Article } from '../components/article'
 import fs from "fs";
 import matter from "gray-matter";
 import { MouseTracker } from '../components/mouseTracker'
+import { Footer } from '../components/footer'
 
 function groupBy(key) {
     return function group(array) {
@@ -30,7 +31,7 @@ export default function articles({posts}){
             <MouseTracker />
         
             <div className="container">
-                <Header />
+                <Header active="articles" />
                 <main>
                 <h1>Articles</h1>
                 {Object.keys(articlesByYear).sort().reverse().map(function(key,index){
@@ -57,6 +58,7 @@ export default function articles({posts}){
                 })}
                     
                 </main>
+                <Footer /> 
             </div>
         </>
     )
