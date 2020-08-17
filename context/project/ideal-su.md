@@ -6,5 +6,5 @@ url: http://idealsu.com.tr
 date: 2017-11-09
 image: /images/projects/idealsu.jpg
 attachmentName : 'Case Study'
-attachmentUrl : '/projects/idealsu.jpg'
+attachmentUrl : '/images/case/idealsu.jpg'
 ---
