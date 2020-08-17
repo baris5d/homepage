@@ -1,1 +1,1 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+Feel free to use this repository to create your own page. Also you can open an issue and contribute to make it better.
