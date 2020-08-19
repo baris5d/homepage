@@ -13,23 +13,18 @@ export function Hire({ text, url, urlText }){
   }
 
   useEffect(() =>{
-    console.log("Recaptcha2")
-    console.log(recaptcha)
     recaptcha.current.reset();
     recaptcha.current.execute();
   },[])
 
   return(
       <div>
-        {console.log("Recaptcha1")}
-        {console.log(recaptcha)}
         <Recaptcha
           className= "grecaptchaBadge"
           ref={ ref => recaptcha.current = ref }
           sitekey= "your-site-key"
           onResolved={ onResolved }
         />
-
         <p>{text} <a href={url} className={styles.link}>{flag ? "" : urlText}</a></p>
       </div>
   )
