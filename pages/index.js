@@ -19,7 +19,6 @@ const SOCIAL = [
 export default function Home() {
   return (
     <>
-      <script src="https://www.google.com/recaptcha/api.js" async defer></script>
       <SEO 
        description = "Gelişmekte olan geliştirici genç"
        title = "Barış Dede { Gelişmekte Olan Geliştirici Genç }"

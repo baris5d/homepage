@@ -1,8 +1,8 @@
 import Link from 'next/link'
 import styles from './header.module.scss'
 const menu = [
-    { name : 'projects', uri : '/projects' },
-    { name : 'articles', uri : '/articles' }
+    { name : 'projects', uri : '/projects/' },
+    { name : 'articles', uri : '/articles/' }
 ]
 export function Header({active = false}) {
   return (
